@@ -242,14 +242,18 @@ a:hover {
 #clients {
   background-color: rgb(243, 242, 241);
   padding: 5.3rem;
+  /* display: flex;
+  justify-content: center; */
   text-align: center;
 }
 
 .functionalitatiIcons {
-  display: flex;
-  justify-content: center;
-  gap: 3.5rem;
-  /* margin-top: 3rem; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  /* gap: 1rem; */
+ 
+
 }
 
 .functionalitatiIcons img {
@@ -264,7 +268,7 @@ a:hover {
 }
 
 /* Tooltip content */
-
+/* 
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 150px;
@@ -275,19 +279,19 @@ a:hover {
   border-radius: 6px;
   padding: 2px 0;
 
-  /* Position the tooltip */
+
   position: absolute;
   z-index: 1;
   bottom: 100%;
   left: 50%;
   margin-left: -75px;
-}
+} */
 
 /* Hover behavior */
 
-.tooltip:hover .tooltiptext {
+/* .tooltip:hover .tooltiptext {
   visibility: visible;
-}
+} */
 
 /* My Work */
 
@@ -834,6 +838,13 @@ form .btn {
     width: 90%;
   }
 
+  /* Icon stripe */
+
+    /* Icon stripe */
+
+    .functionalitatiIcons {
+      grid-template-columns: repeat(2, 1fr);}
+
   /* My Work */
 
   .work {
@@ -1104,6 +1115,10 @@ form .btn {
   .container.small {
     width: 90%;
   }
+
+
+  .functionalitatiIcons {
+    grid-template-columns: 1fr;}
 
   /* My Work */
 
